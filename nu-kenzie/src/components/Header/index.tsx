@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../../styles/components/header.sass"
 
 const Header = () => {
   const [homePage, setHomePage] = useState(true);
