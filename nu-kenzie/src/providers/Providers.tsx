@@ -1,6 +1,5 @@
-// Providers.tsx
 import React, { createContext, useState } from 'react';
-import { Transaction } from './TransactionsContext';
+import { Transaction } from '../interfaces';
 
 export const TransactionsContext = createContext<{
   listTransactions: Transaction[];

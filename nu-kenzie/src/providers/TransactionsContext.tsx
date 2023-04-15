@@ -1,15 +1,5 @@
-import React, { createContext, Dispatch, SetStateAction, useState } from "react";
-
-export interface Transaction {
-  description: string;
-  type: string;
-  value: number;
-}
-
-export type TransactionsContextType = {
-  listTransactions: Transaction[];
-  setListTransactions: Dispatch<SetStateAction<Transaction[]>>;
-};
+import React, { createContext, useState } from "react";
+import { Transaction, TransactionsContextType } from "../interfaces";
 
 export const TransactionsContext = createContext<TransactionsContextType>({
   listTransactions: [],

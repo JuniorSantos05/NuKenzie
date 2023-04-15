@@ -1,18 +1,52 @@
-import React, { useState } from "react";
-import {Transaction, TransactionsContext} from "./providers/TransactionsContext";
-import Form from "./components/Form";
 import Header from "./components/Header";
+import Form from "./components/Form";
+import List from "./components/List";
+import TotalMoney from "./components/TotalMoney";
+import { TransactionsContext } from "./providers/TransactionsContext";
+import { ListContext } from "./providers/ListContext";
+import { Transaction } from "./interfaces";
+import "./App.sass"
 
 const App = () => {
-  const [listTransactions, setListTransactions] = useState<Transaction[]>([]);
-
   return (
-    <TransactionsContext.Provider
-      value={{ listTransactions, setListTransactions }}
-    >
-      <Header/>
-      <Form />
-    </TransactionsContext.Provider>
+    <div className="App">
+    <TransactionsContext.Consumer>
+      {({ listTransactions, setListTransactions }) => (
+        <ListContext.Provider
+          value={{
+            listTransactions,
+            setListTransactions,
+            deleteCard: (transaction: Transaction) =>
+              setListTransactions((prevList) =>
+                prevList.filter((item) => item !== transaction)
+              ),
+            filterEntrada: () => {
+              setListTransactions((prevList) =>
+                prevList.filter((transaction) => transaction.type === "entrada")
+              );
+            },
+            filterSaida: () => {
+              setListTransactions((prevList) =>
+                prevList.filter((transaction) => transaction.type === "saida")
+              );
+            },
+            todos: () => {
+              setListTransactions(listTransactions);
+            },
+          }}
+        >
+          <Header />
+          <main className="App-main">
+            <section>
+          <Form />
+          <TotalMoney listTransactions={listTransactions} />
+            </section>
+          <List />
+          </main>
+        </ListContext.Provider>
+      )}
+    </TransactionsContext.Consumer>
+    </div>
   );
 };
 
