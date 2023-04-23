@@ -11,7 +11,7 @@ const Card = ({ transaction, key, deleteCard, className }: CardProps) => {
         <p>{transaction.type}</p>
       </div>
       <div className="card_box1">
-        <span>{transaction.value}</span>
+        <span>{transaction.value.toFixed(2)}</span>
         <FaTrash className="delete" onClick={() => deleteCard(transaction)} />
       </div>
     </li>

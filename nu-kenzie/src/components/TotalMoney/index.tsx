@@ -13,14 +13,16 @@ const TotalMoney = () => {
       </span>
       <h2>
         R${" "}
-        {listTransactions.reduce((valorAnterior: any, valorAtual: any) => {
-          if (valorAtual.type === "entrada") {
-            return valorAnterior + valorAtual.value;
-          } else if (valorAtual.type === "saida") {
-            return valorAnterior - valorAtual.value;
-          }
-          return valorAnterior;
-        }, 0)}
+        {listTransactions
+          .reduce((valorAnterior: any, valorAtual: any) => {
+            if (valorAtual.type === "entrada") {
+              return valorAnterior + valorAtual.value;
+            } else if (valorAtual.type === "saida") {
+              return valorAnterior - valorAtual.value;
+            }
+            return valorAnterior;
+          }, 0)
+          .toFixed(2)}
       </h2>
     </div>
   );

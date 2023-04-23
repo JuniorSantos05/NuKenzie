@@ -8,7 +8,7 @@ import { useContext } from "react";
 import Home from "./components/Home";
 
 const App = () => {
-  const { homePage, setHomePage } = useContext(TransationContext);
+  const { homePage } = useContext(TransationContext);
 
   return (
     <div className="App">

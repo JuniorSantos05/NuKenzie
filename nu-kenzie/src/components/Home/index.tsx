@@ -1,6 +1,7 @@
 import { useContext } from "react";
-import Ilustrator from "../../assets/illustration.svg";
 import { TransationContext } from "../../providers/Providers";
+import Ilustrator from "../../assets/illustration.svg";
+import "../../styles/components/home.sass";
 
 const Home = () => {
   const { homePage, setHomePage } = useContext(TransationContext);
