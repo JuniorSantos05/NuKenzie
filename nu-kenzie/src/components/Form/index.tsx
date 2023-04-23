@@ -1,17 +1,16 @@
 import React, { useContext, useState } from "react";
-import { TransactionsContext } from "../../providers/TransactionsContext";
-import "../../styles/components/form.sass"
+import { TransationContext } from "../../providers/Providers";
+import "../../styles/components/form.sass";
 
 const Form = () => {
-  const { listTransactions, setListTransactions } = useContext(
-    TransactionsContext
-  );
+  const { listTransactions, setListTransactions } =
+    useContext(TransationContext);
 
   const [description, setDescription] = useState("");
   const [value, setValue] = useState("");
   const [type, setType] = useState("");
 
-  function handleTransactions(event: React.FormEvent) {
+  function handleTransactions(event: any) {
     event.preventDefault();
 
     setListTransactions([
@@ -31,7 +30,7 @@ const Form = () => {
           placeholder="Digite aqui sua descrição"
           onChange={(event) => setDescription(event.target.value)}
         />
-        <span>Ex: Conta de Luz</span>
+        <span>Ex:Conta de Luz</span>
       </div>
 
       <div className="Form_div">

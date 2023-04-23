@@ -1,13 +1,11 @@
 import React, { useContext } from "react";
 import { FaTrash } from "react-icons/fa";
-import { ListContext } from "../../providers/ListContext"; 
+import "../../styles/components/card.sass";
 import { CardProps } from "../../interfaces";
 
-const Card = ({ transaction }: CardProps) => {
-  const { deleteCard } = useContext(ListContext); 
-
+const Card = ({ transaction, key, deleteCard, className }: CardProps) => {
   return (
-    <li className={transaction.type === "entrada" ? "card_entrada" : "card_saida"} id={transaction.id.toString()}>
+    <li className={className} id={key?.toString()}>
       <div className="card_box">
         <h2>{transaction.description}</h2>
         <p>{transaction.type}</p>

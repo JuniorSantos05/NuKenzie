@@ -1,34 +1,30 @@
-import { Dispatch, SetStateAction } from "react";
+export interface ITransationContextProps {
+  children: React.ReactNode;
+}
 
-export interface Transaction {
-    id: number;
-    description: string;
-    type: string;
-    value: number;
-  }
-  
-  export interface ListContextData {
-    listTransactions: Transaction[];
-    setListTransactions: Dispatch<SetStateAction<Transaction[]>>;
-    deleteCard: (transaction: Transaction) => void;
-    filterEntrada: () => void;
-    filterSaida: () => void;
-    todos: () => void;
-  }
+export interface ITransationContext {
+  homePage: boolean;
+  setHomePage: React.Dispatch<React.SetStateAction<boolean>>;
+  cardFilter: string;
+  setCardFilter: React.Dispatch<React.SetStateAction<string>>;
+  listTransactions: ITransation[];
+  setListTransactions: React.Dispatch<React.SetStateAction<ITransation[]>>;
+  filterEntrada: () => void;
+  filterSaida: () => void;
+  todos: () => void;
+  deleteCard: (card: ITransation) => void;
+  filteredTransactions: ITransation[];
+}
 
-  export type TransactionsContextType = {
-    listTransactions: Transaction[];
-    setListTransactions: Dispatch<SetStateAction<Transaction[]>>;
-  };
+export interface ITransation {
+  description: string;
+  type: string;
+  value: number;
+}
 
-  export interface TotalMoneyProps {
-    listTransactions: Transaction[]; 
-  }
-
-  export interface CardProps {
-    transaction: Transaction; 
-    key: number;
-    deleteCard: (transaction: Transaction) => void;
-    className: string;
-  }
-
+export interface CardProps {
+  transaction: ITransation;
+  key: number | string;
+  deleteCard: (card: ITransation) => void;
+  className: string;
+}

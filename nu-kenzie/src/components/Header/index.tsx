@@ -1,8 +1,9 @@
-import React, { useState } from "react";
-import "../../styles/components/header.sass"
+import React, { useContext } from "react";
+import { TransationContext } from "../../providers/Providers";
+import "../../styles/components/header.sass";
 
 const Header = () => {
-  const [homePage, setHomePage] = useState(true);
+  const { homePage, setHomePage } = useContext(TransationContext);
 
   return (
     <header id="App-header">

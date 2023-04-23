@@ -1,24 +1,24 @@
 import React, { useContext } from "react";
 import Card from "../Card";
-import { ListContext } from "../../providers/ListContext"; 
-import "../../styles/components/list.sass"
+import "../../styles/components/list.sass";
+import { TransationContext } from "../../providers/Providers";
+import { ITransation } from "../../interfaces";
 
 const List = () => {
-  const { listTransactions, deleteCard, filterEntrada, filterSaida, todos } =
-    useContext(ListContext); 
+  const { listTransactions, deleteCard } = useContext(TransationContext);
 
   return (
     <div className="list_container">
       <nav>
         <h2>Resumo Financeiro</h2>
         <div className="btn_container">
-          <button className="btn_todos" onClick={todos}>
+          <button className="btn_todos" onClick={() => "Clicou"}>
             Todos
           </button>
-          <button className="btn_list" onClick={filterEntrada}>
+          <button className="btn_list" onClick={() => "Clicou"}>
             Entradas
           </button>
-          <button className="btn_list" onClick={filterSaida}>
+          <button className="btn_list" onClick={() => "Clicou"}>
             Despesas
           </button>
         </div>

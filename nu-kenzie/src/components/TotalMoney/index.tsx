@@ -1,7 +1,10 @@
-import { TotalMoneyProps } from "../../interfaces";
-import "../../styles/components/total_money.sass"
+import React, { useContext, useState } from "react";
+import "../../styles/components/total_money.sass";
+import { TransationContext } from "../../providers/Providers";
 
-const TotalMoney = ({ listTransactions }: TotalMoneyProps) => {
+const TotalMoney = () => {
+  const { listTransactions } = useContext(TransationContext);
+
   return (
     <div className="total_container">
       <span>
@@ -10,7 +13,7 @@ const TotalMoney = ({ listTransactions }: TotalMoneyProps) => {
       </span>
       <h2>
         R${" "}
-        {listTransactions.reduce((valorAnterior, valorAtual) => {
+        {listTransactions.reduce((valorAnterior: any, valorAtual: any) => {
           if (valorAtual.type === "entrada") {
             return valorAnterior + valorAtual.value;
           } else if (valorAtual.type === "saida") {
