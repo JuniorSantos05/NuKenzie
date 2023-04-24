@@ -1,41 +1,39 @@
-# NuKenzie
+# NuKenzie (Gerenciador de Transações)
 ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
+![Badge Tecnologias](https://img.shields.io/badge/Tecnologias-HTML%20|%20Sass%20|%20ReactJS%20|%20Typescript%20-informational)
 
-[Descrição breve do projeto]
 
-## Descrição
+O NuKenzie é uma aplicação web simples que permite aos usuários registrar e gerenciar suas transações financeiras. Com o NuKenzie, os usuários podem adicionar, visualizar e excluir transações, categorizá-las como entrada ou saída, e acompanhar o saldo total de suas transações.
 
-[Descrição detalhada do projeto, incluindo os objetivos, funcionalidades e principais características]
+Esta aplicação foi desenvolvida utilizando tecnologias modernas, como React para a interface do usuário, e utiliza um contexto de transações para gerenciar o estado da aplicação de forma eficiente. Além disso, o Gerenciador de Transações possui uma interface de usuário intuitiva e responsiva, permitindo que os usuários acessem e gerenciem suas transações de forma fácil e conveniente em qualquer dispositivo.
+
+O NuKenzie é uma ferramenta útil para ajudar os usuários a manterem o controle de suas finanças pessoais, entender seus gastos e receitas, e tomar decisões informadas sobre suas finanças. É uma solução ideal para quem deseja uma forma simples e eficaz de gerenciar suas transações financeiras de forma organizada e prática.
+
+Experimente o Gerenciador de Transações e tenha um controle financeiro mais eficiente e conveniente!
+
 
 ## Tecnologias Utilizadas
 
-- [Lista das principais tecnologias utilizadas no projeto, como linguagens de programação, frameworks, bibliotecas, etc.]
+- ``HTML``
+- ``ReactJS``
+- ``Sass``
+- ``React useState``
+- ``React useContext``
+- ``React icons``
+- ``Typescript``
 
 ## Funcionalidades
 
-- [Lista das principais funcionalidades do projeto, descrevendo o que o projeto faz e como as funcionalidades são implementadas]
+- Adição e visualização de transações financeiras.
+- Categorização de transações como entrada ou saída.
+- Exclusão de transações indesejadas.
+- Cálculo automático do saldo total com base nas transações adicionadas.
+- Interface de usuário intuitiva e responsiva para facilitar a usabilidade em diferentes dispositivos.
 
-## Instalação
+# Autor
 
-[Instruções para instalação e configuração do projeto, incluindo dependências, comandos para instalação, etc.]
+[<sub>Junior Santos</sub>](https://github.com/JuniorSantos05/)
 
-## Uso
 
-[Instruções de uso do projeto, incluindo como iniciar a aplicação, como usar as funcionalidades, exemplos de comandos ou interações com a aplicação, etc.]
 
-## Contribuição
-
-[Instruções para contribuição com o projeto, incluindo como fazer pull requests, reportar bugs, sugerir melhorias, etc.]
-
-## Licença
-
-[Informações sobre a licença do projeto, incluindo os termos e condições de uso]
-
-## Autor
-
-[Nome do autor do projeto]
-
-## Contato
-
-[Informações de contato do autor, como e-mail, perfil de redes sociais, etc.]
 
