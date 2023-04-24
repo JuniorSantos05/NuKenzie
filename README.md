@@ -1,5 +1,6 @@
 # NuKenzie (Gerenciador de Transações)
 ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
+
 ![Badge Tecnologias](https://img.shields.io/badge/Tecnologias-HTML%20|%20Sass%20|%20ReactJS%20|%20Typescript%20-informational)
 
 
