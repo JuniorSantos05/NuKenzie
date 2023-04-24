@@ -3,13 +3,11 @@
 ![Badge Tecnologias](https://img.shields.io/badge/Tecnologias-HTML%20|%20Sass%20|%20ReactJS%20|%20Typescript%20-informational)
 
 
-O NuKenzie é uma aplicação web simples que permite aos usuários registrar e gerenciar suas transações financeiras. Com o NuKenzie, os usuários podem adicionar, visualizar e excluir transações, categorizá-las como entrada ou saída, e acompanhar o saldo total de suas transações.
+O NuKenzie é uma aplicação web simples que permite aos usuários registrar e gerenciar suas transações financeiras. 
 
 Esta aplicação foi desenvolvida utilizando tecnologias modernas, como React para a interface do usuário, e utiliza um contexto de transações para gerenciar o estado da aplicação de forma eficiente. Além disso, o Gerenciador de Transações possui uma interface de usuário intuitiva e responsiva, permitindo que os usuários acessem e gerenciem suas transações de forma fácil e conveniente em qualquer dispositivo.
 
 O NuKenzie é uma ferramenta útil para ajudar os usuários a manterem o controle de suas finanças pessoais, entender seus gastos e receitas, e tomar decisões informadas sobre suas finanças. É uma solução ideal para quem deseja uma forma simples e eficaz de gerenciar suas transações financeiras de forma organizada e prática.
-
-Experimente o Gerenciador de Transações e tenha um controle financeiro mais eficiente e conveniente!
 
 
 ## Tecnologias Utilizadas
