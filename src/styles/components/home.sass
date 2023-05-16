@@ -5,10 +5,16 @@
     align-items: center
     height: 97vh
 
+    @media (max-width: 875px)
+        flex-direction: column-reverse
+        
+
     .home_info 
         display: flex
         flex-direction: column
-        width: 23%
+        width: 40%
+        padding: 15px
+        max-width: 300px
 
         .home_text 
             color: #ffffff
