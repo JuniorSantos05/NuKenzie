@@ -1,12 +1,14 @@
+@use "../variables"
+    
 .card_entrada 
     display: flex
     padding: 5px 12px
     margin-top: 22px
-    background: #F8F9FA
+    background: variables.$btn-text-color
     border-radius: 4px
     align-items: center
     justify-content: space-between
-    border-left: 3px solid #03B898
+    border-left: 3px solid variables.$border-green
     
 
 
@@ -14,11 +16,11 @@
     display: flex
     padding: 5px 12px
     margin-top: 22px
-    background: #F8F9FA
+    background: variables.$btn-text-color
     border-radius: 4px
     align-items: center
     justify-content: space-between
-    border-left: 3px solid #FD377E
+    border-left: 3px solid variables.$btn-bg-color
 
 
 .card_box 
@@ -38,17 +40,17 @@ h2
     font-weight: 700
     font-size: 16px
     line-height: 30px
-    color: #212529
+    color: variables.$text-color
 
 
 span 
     font-weight: 400
     font-size: 12px
     line-height: 22px
-    color: #212529
+    color: variables.$text-color
 
 
 p 
     font-weight: 400
     font-size: 12px
-    color: #343A40
+    color: variables.$btn-bg-hover-color-2
